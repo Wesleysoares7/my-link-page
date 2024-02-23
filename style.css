@@ -32,12 +32,14 @@ body {
 
   /*background: color imagem repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
+
 #container {
   width: 100%;
   max-width: 588px;
@@ -168,5 +170,15 @@ footer {
   }
   to {
     left: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
   }
 }
